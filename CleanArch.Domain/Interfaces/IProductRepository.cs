@@ -1,7 +1,10 @@
+using System.Collections.Generic;
+using CleanArch.Domain.Entities;
+
 namespace CleanArch.Domain.Interfaces
 {
-    public class IProductRepository
+    public interface IProductRepository
     {
-        
+        IEnumerable<Product> GetProducts();
     }
 }

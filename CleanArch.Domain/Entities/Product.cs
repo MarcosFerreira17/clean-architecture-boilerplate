@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CleanArch.Domain.Entities
 {
     public class Product
