@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CleanArch.Infra.IoC;
+using CleanArch.MVC.MappingConfig;
 
 namespace CleanArch.MVC
 {
@@ -20,6 +21,7 @@ namespace CleanArch.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructure(Configuration);
+            services.AddAutoMapperConfiguration();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

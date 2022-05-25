@@ -138,3 +138,11 @@ C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clea
 C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\CleanArch.MVC.pdb
 C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\CleanArch.MVC.genruntimeconfig.cache
 C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\ref\CleanArch.MVC.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\AutoMapper.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs

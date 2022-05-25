@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "74DCz5p5Km1u9bC2pnJ/PqWnv55UxedbUqPF3P8YqBsGxA82UQVKK6OIi94QWPB0FSwhwIy9wtnqfUYhuVBSpw==",
+  "dgSpecHash": "/QiDyXZ0dbDlKF2FqAQwHwprsk+LKJgoC+BseEGNa1ng6Mta469cMm/v31rOp/6b/lb5zmlthz7FrmTfBNapcw==",
   "success": true,
   "projectFilePath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mnia\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\mnia\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mnia\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.16\\microsoft.aspnetcore.cryptography.internal.5.0.16.nupkg.sha512",
     "C:\\Users\\mnia\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.16\\microsoft.aspnetcore.cryptography.keyderivation.5.0.16.nupkg.sha512",

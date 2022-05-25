@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6Xg+3P7HMLIHBaPUYfz7BC/d4zOakAVBjbLWveEVF09u+zo67Rg6d9KtEC11YHGgrL30fy5i3Je/xc89Y1Bakg==",
+  "dgSpecHash": "Fad3GTOVbBpVY9EyUrtQlqKIWvSLmjEzPhRuEKfxTG+Y2xwZU0lO8TZrARxr97kFuvP9Q+Vjh7wXZ2+RG4AbmA==",
   "success": true,
   "projectFilePath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mnia\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\mnia\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

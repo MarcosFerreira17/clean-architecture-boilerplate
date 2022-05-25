@@ -10,7 +10,7 @@ namespace CleanArch.Infra.Data.EntityConfiguration
         {
 
             builder.Property(p => p.Name).HasMaxLength(100).IsRequired();
-            builder.Property(p => p.Descripton).HasMaxLength(200).IsRequired();
+            builder.Property(p => p.Description).HasMaxLength(200).IsRequired();
             builder.Property(p => p.Price).HasPrecision(10, 2).IsRequired();
 
             builder.HasData(
@@ -18,14 +18,14 @@ namespace CleanArch.Infra.Data.EntityConfiguration
                 {
                     Id = 1,
                     Name = "Caderno",
-                    Descripton = "Caderno espiral 100 folhas",
+                    Description = "Caderno espiral 100 folhas",
                     Price = 9.45m
                 },
                 new Product
                 {
                     Id = 2,
                     Name = "Caneta",
-                    Descripton = "Caneta bic azul",
+                    Description = "Caneta bic azul",
                     Price = 2.50m
                 }
             );

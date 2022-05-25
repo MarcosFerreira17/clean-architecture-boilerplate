@@ -23,7 +23,7 @@ namespace CleanArch.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Descripton")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
@@ -45,14 +45,14 @@ namespace CleanArch.Infra.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Descripton = "Caderno espiral 100 folhas",
+                            Description = "Caderno espiral 100 folhas",
                             Name = "Caderno",
                             Price = 9.45m
                         },
                         new
                         {
                             Id = 2,
-                            Descripton = "Caneta bic azul",
+                            Description = "Caneta bic azul",
                             Name = "Caneta",
                             Price = 2.50m
                         });
