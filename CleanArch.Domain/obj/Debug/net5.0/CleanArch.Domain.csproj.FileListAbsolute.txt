@@ -1,0 +1,24 @@
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\CleanArch.Domain.deps.json
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\CleanArch.Domain.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\ref\CleanArch.Domain.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\CleanArch.Domain.pdb
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.csproj.AssemblyReference.cache
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.AssemblyInfoInputs.cache
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.AssemblyInfo.cs
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.csproj.CoreCompileInputs.cache
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\ref\CleanArch.Domain.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\CleanArch.Domain.deps.json
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\CleanArch.Domain.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\bin\Debug\net5.0\CleanArch.Domain.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.csproj.AssemblyReference.cache
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.AssemblyInfoInputs.cache
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.AssemblyInfo.cs
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.csproj.CoreCompileInputs.cache
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\refint\CleanArch.Domain.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\CleanArch.Domain.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Domain\obj\Debug\net5.0\ref\CleanArch.Domain.dll

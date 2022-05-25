@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\dev\\Estudos_dotnet\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {}
+    "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {}
   },
   "projects": {
-    "c:\\dev\\Estudos_dotnet\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {
+    "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\dev\\Estudos_dotnet\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
+        "projectUniqueName": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
         "projectName": "CleanArch.Domain",
-        "projectPath": "c:\\dev\\Estudos_dotnet\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
+        "projectPath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
         "packagesPath": "C:\\Users\\mnia\\.nuget\\packages\\",
-        "outputPath": "c:\\dev\\Estudos_dotnet\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\obj\\",
+        "outputPath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mnia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

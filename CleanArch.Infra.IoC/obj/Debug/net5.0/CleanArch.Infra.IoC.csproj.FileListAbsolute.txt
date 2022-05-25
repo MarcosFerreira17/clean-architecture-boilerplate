@@ -1,0 +1,38 @@
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.IoC.deps.json
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.IoC.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\ref\CleanArch.Infra.IoC.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.IoC.pdb
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Application.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Domain.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.Data.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.Data.pdb
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Domain.pdb
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Application.pdb
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.csproj.AssemblyReference.cache
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.AssemblyInfoInputs.cache
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.AssemblyInfo.cs
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.csproj.CopyComplete
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\ref\CleanArch.Infra.IoC.dll
+C:\dev\Estudos_dotnet\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.IoC.deps.json
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.IoC.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.IoC.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Application.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Domain.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.Data.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Infra.Data.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Domain.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\bin\Debug\net5.0\CleanArch.Application.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.csproj.AssemblyReference.cache
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.AssemblyInfoInputs.cache
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.AssemblyInfo.cs
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.csproj.CopyComplete
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\refint\CleanArch.Infra.IoC.dll
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\CleanArch.Infra.IoC.pdb
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.Infra.IoC\obj\Debug\net5.0\ref\CleanArch.Infra.IoC.dll

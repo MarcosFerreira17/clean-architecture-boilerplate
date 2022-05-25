@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hd4NPV29MWjpckHRnMPfz8ftipMS9Y0irJYD+tln0eWqVtbhMDRT8Ci/MGGtTyrv4tyPVWyigiPceIJEOtyTjg==",
+  "dgSpecHash": "6Xg+3P7HMLIHBaPUYfz7BC/d4zOakAVBjbLWveEVF09u+zo67Rg6d9KtEC11YHGgrL30fy5i3Je/xc89Y1Bakg==",
   "success": true,
-  "projectFilePath": "c:\\dev\\Estudos_dotnet\\Clean_Architecture\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj",
+  "projectFilePath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
