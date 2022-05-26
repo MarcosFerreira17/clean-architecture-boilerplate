@@ -146,3 +146,6 @@ C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clea
 C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
 C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
+C:\dev\Estudos\Dotnet_Projects\Youtube\Macoratti\Clean Architecture com DDD\Clean_Architecture\CleanArch\CleanArch.MVC\obj\Debug\net5.0\Razor\Views\Products\Delete.cshtml.g.cs
