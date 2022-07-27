@@ -45,3 +45,5 @@ The following figure shows a closer look at the architecture of an ASP.NET Core 
 The Application Core or Application Core (use cases and entities) contains the high-level business rules of the software that are generally stable and do not change often. Typically, these are the application's functional requirements.
 
 Use cases can be interfaces or services, while entities are usually business model classes that are persistent.
+
+sorce: Macoratti
