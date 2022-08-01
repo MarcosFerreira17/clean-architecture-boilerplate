@@ -1,5 +1,14 @@
 # Clean Architecture
 
+Install the template :
+````
+dotnet new --install .\
+````
+Create a new project
+````
+dotnet new webapiTemplate
+````
+
 <p align="center">
   <img src="https://www.macoratti.net/20/10/aspc_cleanarq11.jpg" alt="Onion Architecture"/>
 </p>

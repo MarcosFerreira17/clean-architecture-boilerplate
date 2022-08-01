@@ -1348,40 +1348,46 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "CleanArch.Infra.Data >= 1.0.0",
+      "CleanArch.Application >= 1.0.0",
       "CleanArch.Infra.IoC >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mnia\\.nuget\\packages\\": {}
+    "C:\\Users\\marco\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.MVC\\CleanArch.MVC.csproj",
+      "projectUniqueName": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.MVC\\CleanArch.MVC.csproj",
       "projectName": "CleanArch.MVC",
-      "projectPath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.MVC\\CleanArch.MVC.csproj",
-      "packagesPath": "C:\\Users\\mnia\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.MVC\\obj\\",
+      "projectPath": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.MVC\\CleanArch.MVC.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.MVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mnia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj": {
-              "projectPath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj"
+            "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Application\\CleanArch.Application.csproj": {
+              "projectPath": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Application\\CleanArch.Application.csproj"
             },
-            "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj": {
-              "projectPath": "C:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj"
+            "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj": {
+              "projectPath": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj"
             }
           }
         }
@@ -1419,7 +1425,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

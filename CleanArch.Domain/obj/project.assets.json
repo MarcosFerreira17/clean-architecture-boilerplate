@@ -8,24 +8,30 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mnia\\.nuget\\packages\\": {}
+    "C:\\Users\\marco\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
+      "projectUniqueName": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Domain\\CleanArch.Domain.csproj",
       "projectName": "CleanArch.Domain",
-      "projectPath": "c:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
-      "packagesPath": "C:\\Users\\mnia\\.nuget\\packages\\",
-      "outputPath": "c:\\dev\\Estudos\\Dotnet_Projects\\Youtube\\Macoratti\\Clean Architecture com DDD\\Clean_Architecture\\CleanArch\\CleanArch.Domain\\obj\\",
+      "projectPath": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Domain\\CleanArch.Domain.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\my_projects\\clean-architecture\\CleanArch.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mnia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
