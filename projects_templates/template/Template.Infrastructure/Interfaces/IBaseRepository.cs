@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace Template.Domain.Common;
+namespace Template.Infrastructure.Interfaces;
 
 public interface IBaseRepository<T>
 {

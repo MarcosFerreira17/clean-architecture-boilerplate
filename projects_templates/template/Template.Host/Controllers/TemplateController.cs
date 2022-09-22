@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -14,18 +13,19 @@ namespace Template.Host.Controllers;
 [Route("api/v1/[controller]")]
 public class TemplateController : ControllerBase
 {
-    protected readonly ITemplateService _service;
+    private readonly ITemplateService _service;
 
     public TemplateController(ITemplateService service)
     {
         _service = service;
     }
 
+#nullable enable
     [HttpGet]
     [Produces("application/json")]
-    [ProducesResponseType(typeof(PagedList<TemplateDto>), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(PagedList<TemplateDto>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-    public async Task<IActionResult> GetAll([FromQuery] TemplateParameters templateParameters)
+    public async Task<IActionResult> GetAll([FromQuery] TemplateParameters? templateParameters)
     {
         var entitiesFromDb = await _service.PagedGetAll(templateParameters);
         Response.Headers.Add("X-Pagination",
@@ -46,7 +46,7 @@ public class TemplateController : ControllerBase
 
     [HttpPost]
     [Produces("application/json")]
-    [ProducesResponseType((int)HttpStatusCode.OK)]
+    [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(StatusCodeResult))]
     [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
     [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
     public async Task<IActionResult> Create([FromBody] TemplateDto addDto)

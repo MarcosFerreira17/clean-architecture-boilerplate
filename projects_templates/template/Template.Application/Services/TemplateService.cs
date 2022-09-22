@@ -7,9 +7,10 @@ using Template.Application.RequestFeatures;
 using Template.Domain.Dtos;
 using Template.Domain.Entities;
 using Template.Domain.Interfaces;
-using Template.Infraestructure.Repositories;
+using Template.Infrastructure.Interfaces;
+using Template.Infrastructure.Repositories;
 
-namespace Template.Domain.Services;
+namespace Template.Application.Services;
 
 public class TemplateService : ITemplateService
 {

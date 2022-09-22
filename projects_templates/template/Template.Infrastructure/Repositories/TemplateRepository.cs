@@ -1,8 +1,8 @@
 using Template.Domain.Entities;
-using Template.Domain.Interfaces;
-using Template.Infraestructure.DataContext;
+using Template.Infrastructure.DataContext;
+using Template.Infrastructure.Interfaces;
 
-namespace Template.Infraestructure.Repositories;
+namespace Template.Infrastructure.Repositories;
 
 public class TemplateRepository : BaseRepository<TemplateEntity, TemplateDbContext>, ITemplateRepository
 {

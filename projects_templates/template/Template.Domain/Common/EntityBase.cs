@@ -8,5 +8,5 @@ public abstract class EntityBase<Tid>
         Id = id;
     }
 
-    public Tid Id { get; private set; }
+    public Tid Id { get; set; }
 }

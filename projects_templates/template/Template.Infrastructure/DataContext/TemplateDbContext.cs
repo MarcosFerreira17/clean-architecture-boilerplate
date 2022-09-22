@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Template.Domain.Entities;
 
-namespace Template.Infraestructure.DataContext;
+namespace Template.Infrastructure.DataContext;
 
 public class TemplateDbContext : DbContext
 {

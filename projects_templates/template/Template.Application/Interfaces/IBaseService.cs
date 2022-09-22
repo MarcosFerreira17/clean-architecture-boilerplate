@@ -1,4 +1,4 @@
-namespace Template.Domain.Common;
+namespace Template.Application.Interfaces;
 
 public interface IBaseService<T, Tid>
 {

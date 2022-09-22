@@ -2,7 +2,7 @@ using AutoMapper;
 using Template.Domain.Dtos;
 using Template.Domain.Entities;
 
-namespace Template.Infraestructure.Automapper;
+namespace Template.Infrastructure.Automapper;
 
 public class TemplateProfile : Profile
 {

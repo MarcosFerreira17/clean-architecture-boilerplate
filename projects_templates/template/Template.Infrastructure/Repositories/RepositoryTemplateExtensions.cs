@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Text;
 using Template.Domain.Entities;
 
-namespace Template.Infraestructure.Repositories;
+namespace Template.Infrastructure.Repositories;
 
 public static class RepositoryTemplateExtensions
 {

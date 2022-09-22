@@ -2,11 +2,12 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Template.Domain.Services;
+using Template.Application.Services;
 using Template.Domain.Interfaces;
-using Template.Infraestructure.DataContext;
-using Template.Infraestructure.Repositories;
+using Template.Infrastructure.DataContext;
+using Template.Infrastructure.Repositories;
 using FluentValidation.AspNetCore;
+using Template.Infrastructure.Interfaces;
 
 namespace Template.Host.Configurations;
 

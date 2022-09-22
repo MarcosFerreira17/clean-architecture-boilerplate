@@ -1,11 +1,12 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Template.Domain.Common;
-using Template.Infraestructure.DataContext;
+using Template.Infrastructure.DataContext;
+using Template.Infrastructure.Interfaces;
 
-namespace Template.Infraestructure.Repositories;
+namespace Template.Infrastructure.Repositories;
 
-public abstract class BaseRepository<T, TContext> : IBaseRepository<T> where T : class where TContext : TemplateDbContext
+public abstract class BaseRepository<T, TContext> : IBaseRepository<T> where T : EntityBase<long> where TContext : TemplateDbContext
 {
     protected readonly TContext _context;
     protected BaseRepository(TContext context)

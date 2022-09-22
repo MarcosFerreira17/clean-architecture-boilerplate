@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Polly;
 using Template.Application.Exceptions;
-using Template.Infraestructure.DataContext;
+using Template.Infrastructure.DataContext;
 
 namespace Template.Host.Configurations.Extensions;
 

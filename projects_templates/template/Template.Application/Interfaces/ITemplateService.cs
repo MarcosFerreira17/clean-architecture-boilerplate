@@ -1,5 +1,5 @@
+using Template.Application.Interfaces;
 using Template.Application.RequestFeatures;
-using Template.Domain.Common;
 using Template.Domain.Dtos;
 
 namespace Template.Domain.Interfaces;

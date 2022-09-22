@@ -5,7 +5,7 @@ using Serilog;
 using Template.Host.Configurations;
 using Template.Host.Configurations.Extensions;
 using Template.Host.Middlewares;
-using Template.Infraestructure.DataContext;
+using Template.Infrastructure.DataContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
