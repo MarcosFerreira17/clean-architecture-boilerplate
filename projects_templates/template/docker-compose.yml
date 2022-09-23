@@ -5,10 +5,10 @@ services:
     image: mysql:8.0.22
 
   template_api:
-    image: ${DOCKER_REGISTRY-}host
+    image: ${DOCKER_REGISTRY-}templatehost
     build:
       context: .
-      dockerfile: ./Template.Host/Dockerfile
+      dockerfile: Template.Host/Dockerfile
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.16.1

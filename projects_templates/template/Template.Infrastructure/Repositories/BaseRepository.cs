@@ -14,7 +14,7 @@ public abstract class BaseRepository<T, TContext> : IBaseRepository<T> where T :
         _context = context;
     }
 
-    public async virtual Task<IEnumerable<T>> FindAll()
+    public virtual async Task<IEnumerable<T>> FindAll()
     {
         IQueryable<T> query = _context.Set<T>();
 
@@ -23,17 +23,17 @@ public abstract class BaseRepository<T, TContext> : IBaseRepository<T> where T :
     public virtual IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
     => _context.Set<T>().Where(expression).AsNoTracking();
 
-    public async virtual Task Create(T entity)
+    public virtual async Task Create(T entity)
     {
         await _context.Set<T>().AddAsync(entity);
         await _context.SaveChangesAsync();
     }
-    public async virtual Task Update(T entity)
+    public virtual async Task Update(T entity)
     {
         _context.Set<T>().Update(entity);
         await _context.SaveChangesAsync();
     }
-    public async virtual Task Delete(T entity)
+    public virtual async Task Delete(T entity)
     {
         _context.Set<T>().Remove(entity);
         await _context.SaveChangesAsync();

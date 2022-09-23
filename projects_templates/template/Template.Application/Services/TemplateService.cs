@@ -78,7 +78,7 @@ public class TemplateService : ITemplateService
         var mappedEntity = _mapper.Map<IEnumerable<TemplateDto>>(entities);
         if (entities == null)
         {
-            _logger.LogInformation("No data found.");
+            _logger.LogInformation("No data found");
             throw new NotFoundException("No data found.");
         }
         return mappedEntity;
@@ -95,17 +95,14 @@ public class TemplateService : ITemplateService
     {
         if (id < 1)
         {
-            _logger.LogError("Field id must be filled.");
+            _logger.LogError("Field id must be filled");
             throw new NotFoundException("Field id must be filled and has to be greater than 0.");
         }
 
         var entityFromDb = await _repo.FindByCondition(x => x.Id == id).FirstOrDefaultAsync();
-        if (entityFromDb is null)
-        {
-            _logger.LogInformation("Id not found");
-            throw new NotFoundException("This id does not exist in our database, please check and try again.");
-        }
+        if (entityFromDb is not null) return _mapper.Map<TemplateEntity>(entityFromDb);
+        _logger.LogInformation("Id not found");
+        throw new NotFoundException("This id does not exist in our database, please check and try again.");
 
-        return _mapper.Map<TemplateEntity>(entityFromDb);
     }
 }

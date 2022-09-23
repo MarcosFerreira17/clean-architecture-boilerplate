@@ -3,22 +3,21 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
+# EXPOSE 441
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-WORKDIR /Template
-COPY ["./Template.Host/Template.Host.csproj", "./Template.Host/"]
-COPY ["./Template.Application/Template.Application.csproj", "./Template.Application/"]
-COPY ["./Template.Domain/Template.Domain.csproj", "./Template.Domain/"]
-COPY ["./Template.Infraestructure/Template.Infraestructure.csproj", "./Template.Infraestructure/"]
-RUN dotnet restore "./Template.Host/Template.Host.csproj"
+WORKDIR /src
+COPY ["Template.Host/Template.Host.csproj", "Template.Host/"]
+COPY ["Template.Infrastructure/Template.Infrastructure.csproj", "Template.Infrastructure/"]
+COPY ["Template.Domain/Template.Domain.csproj", "Template.Domain/"]
+COPY ["Template.Application/Template.Application.csproj", "Template.Application/"]
+RUN dotnet restore "Template.Host/Template.Host.csproj"
 COPY . .
-#Deve ser modificado: 
-WORKDIR "/Template/Template.Host" 
+WORKDIR "/src/Template.Host"
 RUN dotnet build "Template.Host.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Template.Host.csproj" -c Release -o /app/publish
+RUN dotnet publish "Template.Host.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
