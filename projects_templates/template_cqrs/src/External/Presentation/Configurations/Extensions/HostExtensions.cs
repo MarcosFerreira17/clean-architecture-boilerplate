@@ -36,7 +36,7 @@ public static class HostExtensions
             catch (Exception ex)
             {
                 logger.LogError(ex, "An error occurred while migrating the database used on context {DbContextName}", typeof(TContext).Name);
-                throw new Exception(ex.Message + "An error occurred while migrating the database used on context {DbContextName}", typeof(TContext).Name);
+                throw new Exception(ex.Message + "An error occurred while migrating the database");
             }
         }
         return host;
