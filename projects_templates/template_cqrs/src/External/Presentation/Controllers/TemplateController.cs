@@ -1,12 +1,17 @@
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+using Application.Exceptions.Model;
 using Application.Features.Commands.CreateTemplate;
 using Application.Features.Commands.DeleteTemplate;
 using Application.Features.Commands.UpdateTemplate;
+using Application.Features.Queries.GetTemplateList;
+using Application.RequestFeatures;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Presentation.Controllers;
 
@@ -21,22 +26,22 @@ public class TemplateController : ControllerBase
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
-    // [HttpGet("{userName}", Name = "GetOrder")]
-    // [ProducesResponseType(typeof(IEnumerable<OrdersVm>), (int)HttpStatusCode.OK)]
-    // public async Task<ActionResult<IEnumerable<OrdersVm>>> GetOrdersByUserName(string userName)
-    // {
-    //     var query = new GetOrdersListQuery(userName);
-    //     var orders = await _mediator.Send(query);
-    //     return Ok(orders);
-    // }
+    [HttpGet(Name = "GetTemplate")]
+    [ProducesResponseType(typeof(IEnumerable<EntityDto>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IEnumerable<EntityDto>>> GetAll([FromQuery] GetTemplateParameters parameters)
+    {
+        var entities = await _mediator.Send(parameters);
+        Response.Headers.Add("X-Pagination",
+            JsonConvert.SerializeObject(entities.MetaData));
+        return Ok(new Response<PagedList<EntityDto>>(entities));
+    }
 
-    // testing purpose
     [HttpPost(Name = "CreateTemplate")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<long>> CreateTemplate([FromBody] CreateTemplateCommand command)
     {
         var result = await _mediator.Send(command);
-        return Ok(result);
+        return Ok(new Response<long>(result, $"Successfully created with Id: {result}"));
     }
 
     [HttpPut(Name = "Update")]

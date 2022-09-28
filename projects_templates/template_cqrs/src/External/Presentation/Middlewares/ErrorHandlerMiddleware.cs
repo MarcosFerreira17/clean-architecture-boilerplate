@@ -25,7 +25,7 @@ public class ErrorHandlerMiddleware
         {
             var response = context.Response;
             response.ContentType = "application/json";
-            var responseModel = ErrorResponse<string>.Fail(error.Message);
+            var responseModel = new Response<string>(error.Message);
             response.StatusCode = error switch
             {
                 ValidationException => (int)HttpStatusCode.BadRequest,
