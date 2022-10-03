@@ -21,14 +21,14 @@ public class GetTemplateListQueryHandler : IRequestHandler<GetTemplateParameters
 
     public async Task<PagedList<EntityDto>> Handle(GetTemplateParameters request, CancellationToken cancellationToken)
     {
-        var templateList = _repository.FindByCondition(x => x.Id >= 0)
+        var entities = _repository.FindByCondition(x => x.Id >= 1)
                                     .FilterTemplate(request.MinId, request.MaxId)
                                     .Search(request.SearchTerm)
                                     .OrderBy(t => t.Id)
                                     // .Sort(templateParameters.OrderBy)
                                     .ToList();
 
-        var mappedEntity = _mapper.Map<List<EntityDto>>(templateList);
+        var mappedEntity = _mapper.Map<List<EntityDto>>(entities);
 
         return PagedList<EntityDto>.ToPagedList(mappedEntity, request.PageNumber, request.PageSize);
     }
