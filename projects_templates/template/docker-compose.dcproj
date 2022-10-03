@@ -6,7 +6,7 @@
     <ProjectGuid>2e2f7434-30c9-4f6d-9b18-37c22f90d4a4</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>template.host</DockerServiceName>
+    <DockerServiceName>template.presentation</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

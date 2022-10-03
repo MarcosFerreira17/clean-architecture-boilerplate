@@ -1,10 +1,11 @@
 # Clean Architecture
+## This project is under development.
 
-Install the template :
+On the root project install template:
 ````
 dotnet new --install .\
 ````
-Create a new project
+Verify the template name and create a new project
 ````
 dotnet new webapiTemplate
 ````

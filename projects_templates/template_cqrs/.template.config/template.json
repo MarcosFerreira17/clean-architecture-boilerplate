@@ -5,7 +5,7 @@
     "identity": "Custom.Template",
     "name": "Custom template WebAPI",
     "description": "This project aims to provide to final user a ddd webapi template using cleancode architecture, this project has no dependencies from core application.",
-    "shortName": "artemis",
+    "shortName": "atermis",
     "defaultName": "Template",
     "tags": {
         "language": "C#",

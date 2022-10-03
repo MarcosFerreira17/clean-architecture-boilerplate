@@ -5,19 +5,25 @@ services:
     image: mysql:8.0.22
 
   template_api:
-    image: ${DOCKER_REGISTRY-}templatehost
+    image: ${DOCKER_REGISTRY-}templatepresentation
     build:
       context: .
-      dockerfile: Template.Host/Dockerfile
+      dockerfile: Template.Presentation/Dockerfile
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.16.1
 
   kibana:
-    image: docker.elastic.co/kibana/kibana:7.16.1  
+    image: docker.elastic.co/kibana/kibana:7.16.1
 
   sonarqube:
     image: sonarqube:latest
+
+  template.presentation:
+    image: ${DOCKER_REGISTRY-}templatepresentation
+    build:
+      context: .
+      dockerfile: External/Template.Presentation/Dockerfile
 
 volumes:
   templatedb:
@@ -27,3 +33,4 @@ networks:
     driver: bridge
   elasticnetwork:
     driver: bridge
+

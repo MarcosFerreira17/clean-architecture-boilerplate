@@ -1,4 +1,0 @@
-{
-    "dotnet-test-explorer.testProjectPath": "./Template.Tests/Template.Tests.csproj",
-    "dotnet-test-explorer.treeMode": "flat"
-}
