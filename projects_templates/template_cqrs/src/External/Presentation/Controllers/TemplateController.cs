@@ -6,6 +6,7 @@ using Application.Exceptions.Model;
 using Application.Features.Commands.CreateTemplate;
 using Application.Features.Commands.DeleteTemplate;
 using Application.Features.Commands.UpdateTemplate;
+using Application.Features.Queries.GetTemplateById;
 using Application.Features.Queries.GetTemplateList;
 using Application.RequestFeatures;
 using MediatR;
@@ -36,6 +37,17 @@ public class TemplateController : ControllerBase
         return Ok(new Response<PagedList<EntityDto>>(entities));
     }
 
+    [HttpGet("{id}", Name = "GetById")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesDefaultResponseType]
+    public async Task<ActionResult> GetById(long id)
+    {
+        var entity = await _mediator.Send(id);
+
+        return Ok(entity);
+    }
+
     [HttpPost(Name = "CreateTemplate")]
     [ProducesResponseType((int)HttpStatusCode.OK)]
     public async Task<ActionResult<long>> CreateTemplate([FromBody] CreateTemplateCommand command)
@@ -58,7 +70,7 @@ public class TemplateController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesDefaultResponseType]
-    public async Task<ActionResult> Delete(int id)
+    public async Task<ActionResult> Delete(long id)
     {
         var command = new DeleteTemplateCommand() { Id = id };
         await _mediator.Send(command);

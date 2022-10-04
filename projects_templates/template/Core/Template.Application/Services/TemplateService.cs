@@ -61,7 +61,7 @@ public class TemplateService : ITemplateService
     {
         if (!templateParameters.ValidIdRange) throw new BadRequestException("MinId cannot be greater than MaxId");
 
-        var entities = await _repo.FindByCondition(x => x.Id >= 0)
+        var entities = await _repo.FindByCondition(x => x.Id >= 1)
                             .FilterTemplate(templateParameters.MinId, templateParameters.MaxId)
                             .Search(templateParameters.SearchTerm)
                             .OrderBy(t => t.Id)
