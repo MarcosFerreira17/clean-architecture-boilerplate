@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using System.Linq;
+using Domain.Entities;
 using Infrastructure.Interfaces;
 using NHibernate;
 using System;
@@ -24,24 +25,29 @@ namespace Infrastructure.Repositories
             await transaction.CommitAsync();
         }
 
-        public Task<IEnumerable<Employee>> GetAll()
+        public IEnumerable<Employee> GetAll()
         {
-            throw new NotImplementedException();
+            return _session.Query<Employee>().ToList();
         }
 
         public Task<Employee> GetById(long id)
         {
-            throw new NotImplementedException();
+            return _session.GetAsync<Employee>(id);
         }
 
-        public Task Remove(long id)
+        public async Task Remove(long id)
         {
-            throw new NotImplementedException();
+            ITransaction transaction = _session.BeginTransaction();
+            var entity = await _session.GetAsync<Employee>(id);
+            await _session.DeleteAsync(entity);
+            await transaction.CommitAsync();
         }
 
-        public Task Update(Employee entity)
+        public async Task Update(Employee entity)
         {
-            throw new NotImplementedException();
+            ITransaction transaction = _session.BeginTransaction();
+            await _session.UpdateAsync(entity);
+            await transaction.CommitAsync();
         }
     }
 }

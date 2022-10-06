@@ -9,6 +9,6 @@ namespace Infrastructure.Interfaces
         Task Remove(long id);
         Task Update(T entity);
         Task<T> GetById(long id);
-        Task<IEnumerable<T>> GetAll();
+        IEnumerable<T> GetAll();
     }
 }
