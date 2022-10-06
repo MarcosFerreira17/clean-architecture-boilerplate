@@ -7,7 +7,7 @@ dotnet new --install .\
 ````
 Verify the template name and create a new project
 ````
-dotnet new webapiTemplate
+dotnet new atermis 
 ````
 
 <p align="center">

@@ -1,1 +1,1 @@
-## this project is under development, may contain bugs
+## this project is under development, close to its first version, it contains improvements to be made that are already being addressed, will soon be available via nuget
