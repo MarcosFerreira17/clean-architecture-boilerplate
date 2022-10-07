@@ -1,4 +1,3 @@
-
 <!-- Title -->
 
 <p align="center">
@@ -7,87 +6,87 @@
 </p>
     
  <!-- ABOUT THE PROJECT -->
-# Sobre o Projeto
-Sejam todos bem vindos a segunda edição do He4rtoberfest, evento da He4rt Developers para incentivar novos desenvolvedores a participar do Hacktoberfest pela DigitalOcean e aprender um pouco mais sobre a ideia do open source.
+# About the project
+Welcome everyone to the second edition of He4rtoberfest, an event by He4rt Developers to encourage new developers to participate in Hacktoberfest by DigitalOcean and learn a little more about the idea of ​​open source.
 
-A ideia se baseia em pegar estruturas de projetos que costumanos utilizar e transformar em templates para agilizar o desenvolvimento de novos projeots, desde o mais simples até o mais complexo e fazer nas mais variadas arquiteturas e pacotes mostrando a maior quantidade de jeitos possíveis de resolver o mesmo problema.
+The idea is based on taking project structures that we usually use and transforming them into templates to speed up the development of new projects, from the simplest to the most complex, and doing them in the most varied architectures and packages, showing the greatest number of possible ways to solve the problem. same problem.
 
-## 
+##
 <!-- ROADMAP OF PROJECT -->
 
-## Exemplos a serem desenvolvidos
+## Examples to be developed
 
-Na lista abaixo estarão todos os exercicios que iremos aceitar nos nossos pull request. 
+In the list below will be all the exercises that we will accept in our pull requests.
 
 - [1 - Clean Achitecture CQRS Entity Framework]()
-- [2 - Clean Achitecture CQRS Dapper]()
-- [3 - Clean Achitecture CQRS NHibernate]()
+- [2 - Clean Architecture CQRS Dapper]()
+- [3 - Clean Architecture CQRS NHibernate]()
 - [4 - WebApi JWT Token Auth]()
-- [5 - Clean Achitecture Identity4]()
+- [5 - Clean Architecture Identity4]()
 
-Caso você queira dar sugestões de desafios, contate algum moderador.
+If you want to give suggestions for challenges, contact a moderator.
   
 <!-- CONTRIBUTING -->
 
-## Como participar
+## How to participate
 
-Contribuições fazem com que a comunidade open source seja um lugar incrível para aprender, inspirar e criar. Todas contribuições
-são **extremamente apreciadas**
+Contributions make the open source community an amazing place to learn, inspire and create. all contributions
+are **extremely appreciated**
 
-Porém, como esse será um evento, haverão algumas regras a serem seguidas para que você seja aprovado e não é nada complexo. Entenda:
+However, as this will be an event, there will be some rules to follow in order for you to be approved and it is not complex. Understand:
 
-- Para que você tenha um Pull Request (PR) aprovado vinculado ao Hacktoberfest, você terá que fazer um PR do **desafio 1** ( 1 - Clean Achitecture CQRS Entity Framework);
+- In order for you to have an approved Pull Request (PR) linked to Hacktoberfest, you will have to do a PR of **challenge 1** (1 - Clean Achitecture CQRS Entity Framework);
 
 
-Quando você for criar a branch para mandar o Pull Request, você deverá seguir o exemplo abaixo:
+When you create the branch to send the Pull Request, you should follow the example below:
 
-1. Realize um Fork do projeto
-2. Vá até o repositório do fork no seu github e na parte code copie o link para clonar (HTTPS ou SSH)
-3. Abra o terminal, escolha uma pasta de sua preferência e faça um clone git clone cole o link que você copiou
-4. Crie uma pasta da linguagem que você escolheu no diretório `challenges/id_challenge/nome_template/`
-5. Depois dentro desta pasta lang crie a pasta com seu nickname ficando assim `challenges/id_challenge/nome_template/nickname`
-6. Resolva o desafio
-7. Copie o model.md para a sua pasta, preencha com as informações descritas e renomeie o arquivo para **README.MD**
-8. Crie um branch com o desafio seguindo o modelo ao lado `(git checkout -b challenges/id_challenge/nome_template/nickname)`
-9. Depois faça `git add .`
-10. Realize o Commit `(git commit -m 'Finalizando o desafio')`
-11. Realize o Push no Branch `(git push origin challenges/id_challenge/lang/nickname)`
-13. Abra um Pull Request
+1. Fork the project
+2. Go to the fork repository on your github and in the code part copy the link to clone (HTTPS or SSH)
+3. Open the terminal, choose a folder of your choice and make a clone git clone paste the link you copied
+4. Create a folder of the language you chose in the `challenges/id_challenge/template_name/` directory
+5. Then, inside this lang folder, create the folder with your nickname, thus `challenges/id_challenge/name_template/nickname`
+6. Solve the challenge
+7. Copy the model.md to your folder, fill in the information described and rename the file to **README.MD**
+8. Create a branch with the challenge following the template beside `(git checkout -b challenges/id_challenge/template_name/nickname)`
+9. Then do `git add .`
+10. Commit `(git commit -m 'Finishing the challenge')`
+11. Push the Branch `(git push origin challenges/id_challenge/lang/nickname)`
+13. Open a Pull Request
 
-## Revisão de Pull Requests
+## Pull Requests Review
 
-Como o nosso objetivo será dar a melhor experiência possível para o participante, nós iremos ter algumas regras básicas de revisão de código para que seja uma experiência interessante para quem está aplicando o desafio, sendo elas:
+As our goal will be to give the best experience possible to the participant, we will have some basic code review rules to make it an interesting experience for those who are applying the challenge, namely:
 
-- Reforçar uma leitura de código e tipagem quando possível;
-- Erros de digitação/gramaticais e nomes de variáveis sem um contexto, tais como [a,b,c,x,y,z] deverão ser pedidas alterações;
-- Isolamento de funções quando necessário também poderá ser requisitado.
+- Reinforce code reading and typing when possible;
+- Typing/grammatical errors and variable names without a context, such as [a,b,c,x,y,z] will have to be changed;
+- Function isolation when necessary can also be requested.
 
-Qualquer dúvida, poderá ir o nosso [banco de dúvidas](https://github.com/he4rt/he4rtoberfest-2022/issues) e perguntar.
+Any questions, you can go to our [question bank](https://github.com/he4rt/he4rtoberfest-2022/issues) and ask.
 
-## Atualizando o seu fork
+## Updating your fork
 
-Caso esse repositório seja atualizado com novos exercícios você precisa atualizar seu fork
+If this repository is updated with new exercises you need to update your fork
 
 ```bash
-# 1. Mudar para a branch main
+#1. Switch to the main branch
 git checkout main
-# 2. Checar se sua cópia local tem o link do original
+# 2. Check if your local copy has a link to the original
 git remote -v
-# 3. Se não, adicione o link do original
+#3. If not, add the original link
 git remote add upstream git@github.com:MarcosFerreira17/clean-architecture_templates.git
-# ou 
+# or
 git remote add upstream https://github.com/MarcosFerreira17/clean-architecture_templates.git
-# 4. Confirme se o link foi adicionado
+#4. Confirm the link has been added
 git remote -v
-# 5. Agora você pode fazer o fetch com o repo original, assumindo que o nome do link é 'upstream'
+#5. You can now fetch the original repo, assuming the link name is 'upstream'
 git fetch upstream
-# 6. Fazer merge dos updates para sua branch main
-git merge upstream/main main 
-# 7. Realizar o push para seu fork com as novas mudanças 
+# 6. Merge updates to your main branch
+git merge upstream/main main
+#7. Push your fork with the new changes
 git push origin main
 ```
 
-## Materiais complementares
+## Complementary materials
 
 - [**Git4Noobs**](https://github.com/danielhe4rt/git4noobs)
-- [**Aprendendo sobre Git e Github**](https://www.youtube.com/watch?v=_LNWekPPS9w)
+- [**Learning about Git and Github**](https://www.youtube.com/watch?v=_LNWekPPS9w)
