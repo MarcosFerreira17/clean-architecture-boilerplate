@@ -61,7 +61,7 @@ As our goal will be to give the best experience possible to the participant, we 
 - Typing/grammatical errors and variable names without a context, such as [a,b,c,x,y,z] will have to be changed;
 - Function isolation when necessary can also be requested.
 
-Any questions, you can go to our [question bank](https://github.com/he4rt/he4rtoberfest-2022/issues) and ask.
+Any questions, you can go to our [question bank](https://github.com/MarcosFerreira17/clean-architecture_templates/issues) and ask.
 
 ## Updating your fork
 
