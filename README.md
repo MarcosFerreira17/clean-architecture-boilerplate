@@ -1,59 +1,93 @@
-# Clean Architecture
-## This project is under development.
 
-On the root project install template:
-````
-dotnet new --install .\
-````
-Verify the template name and create a new project
-````
-dotnet new atermis 
-````
+<!-- Title -->
 
 <p align="center">
-  <img src="https://www.macoratti.net/20/10/aspc_cleanarq11.jpg" alt="Onion Architecture"/>
+  <h2 align="center">Clean Achitecture Templates</h2>
+  <img src="imgs/Banners-Dark.png" >
 </p>
+    
+ <!-- ABOUT THE PROJECT -->
+# Sobre o Projeto
+Sejam todos bem vindos a segunda edição do He4rtoberfest, evento da He4rt Developers para incentivar novos desenvolvedores a participar do Hacktoberfest pela DigitalOcean e aprender um pouco mais sobre a ideia do open source.
 
-## About <a name = "about"></a>
+A ideia se baseia em pegar estruturas de projetos que costumanos utilizar e transformar em templates para agilizar o desenvolvimento de novos projeots, desde o mais simples até o mais complexo e fazer nas mais variadas arquiteturas e pacotes mostrando a maior quantidade de jeitos possíveis de resolver o mesmo problema.
 
-In this project we will approach the concept of Clean Architecture and create an ASP .NET Core solution using this concept proposed by Uncle Bob in his book Clean Architecture.
-The concept of Clean Architecture is based on the Dependency Rule, which states that the source code dependency can only point to the inside of the application.
+## 
+<!-- ROADMAP OF PROJECT -->
 
-The layers of Clean Architecture
+## Exemplos a serem desenvolvidos
 
-According to the ASP.Net Core documentation, our source code can be structured as separate projects or layers with dependency flow from outside to the application's core layer.
+Na lista abaixo estarão todos os exercicios que iremos aceitar nos nossos pull request. 
 
-The dependency flow can be represented as shown in the figure:
-<p align="center">
-  <img src="https://www.macoratti.net/20/10/aspc_cleanarq12.jpg" alt="Clean Architecture layers"/>
-</p>
+- [1 - Clean Achitecture CQRS Entity Framework]()
+- [2 - Clean Achitecture CQRS Dapper]()
+- [3 - Clean Achitecture CQRS NHibernate]()
+- [4 - WebApi JWT Token Auth]()
+- [5 - Clean Achitecture Identity4]()
 
-From which we can deduce the following:
+Caso você queira dar sugestões de desafios, contate algum moderador.
+  
+<!-- CONTRIBUTING -->
 
-- Application Core types include interfaces, services, DTO (data transfer objects), and entities (business models);
- 
-- Infrastructure types include EF Core types (DbContext, Migration), data access implementation types (Repositories), Infrastructure specific services (eg FileLogger or SmtpNotifier);
- 
-- UI types include controllers, filters, views, view models, initialization;
- 
-- Test types include unit tests, integration tests;
+## Como participar
 
-Note that the solid arrows represent compile-time dependencies, while the dashed arrow represents a run-time-only dependency.
+Contribuições fazem com que a comunidade open source seja um lugar incrível para aprender, inspirar e criar. Todas contribuições
+são **extremamente apreciadas**
 
-With clean architecture, the UI layer works with interfaces defined in Application Core at compile time and ideally shouldn't know about implementation types defined in the infrastructure layer.
+Porém, como esse será um evento, haverão algumas regras a serem seguidas para que você seja aprovado e não é nada complexo. Entenda:
 
-At runtime, however, these implementation types are required for the application to run, so they need to be present and connected to Application Core interfaces via dependency injection.
+- Para que você tenha um Pull Request (PR) aprovado vinculado ao Hacktoberfest, você terá que fazer um PR do **desafio 1** ( 1 - Clean Achitecture CQRS Entity Framework);
 
-The following figure shows a closer look at the architecture of an ASP.NET Core application when built following these recommendations:
 
-<p align="center">
-  <img src="https://www.macoratti.net/20/10/aspc_cleanarq18.png" alt="ASP.NET Core Architecture"/>
-</p>
+Quando você for criar a branch para mandar o Pull Request, você deverá seguir o exemplo abaixo:
 
-## Application Layer <a name = "application_layer"></a>
+1. Realize um Fork do projeto
+2. Vá até o repositório do fork no seu github e na parte code copie o link para clonar (HTTPS ou SSH)
+3. Abra o terminal, escolha uma pasta de sua preferência e faça um clone git clone cole o link que você copiou
+4. Crie uma pasta da linguagem que você escolheu no diretório `challenges/id_challenge/nome_template/`
+5. Depois dentro desta pasta lang crie a pasta com seu nickname ficando assim `challenges/id_challenge/nome_template/nickname`
+6. Resolva o desafio
+7. Copie o model.md para a sua pasta, preencha com as informações descritas e renomeie o arquivo para **README.MD**
+8. Crie um branch com o desafio seguindo o modelo ao lado `(git checkout -b challenges/id_challenge/nome_template/nickname)`
+9. Depois faça `git add .`
+10. Realize o Commit `(git commit -m 'Finalizando o desafio')`
+11. Realize o Push no Branch `(git push origin challenges/id_challenge/lang/nickname)`
+13. Abra um Pull Request
 
-The Application Core or Application Core (use cases and entities) contains the high-level business rules of the software that are generally stable and do not change often. Typically, these are the application's functional requirements.
+## Revisão de Pull Requests
 
-Use cases can be interfaces or services, while entities are usually business model classes that are persistent.
+Como o nosso objetivo será dar a melhor experiência possível para o participante, nós iremos ter algumas regras básicas de revisão de código para que seja uma experiência interessante para quem está aplicando o desafio, sendo elas:
 
-sorce: Macoratti
+- Reforçar uma leitura de código e tipagem quando possível;
+- Erros de digitação/gramaticais e nomes de variáveis sem um contexto, tais como [a,b,c,x,y,z] deverão ser pedidas alterações;
+- Isolamento de funções quando necessário também poderá ser requisitado.
+
+Qualquer dúvida, poderá ir o nosso [banco de dúvidas](https://github.com/he4rt/he4rtoberfest-2022/issues) e perguntar.
+
+## Atualizando o seu fork
+
+Caso esse repositório seja atualizado com novos exercícios você precisa atualizar seu fork
+
+```bash
+# 1. Mudar para a branch main
+git checkout main
+# 2. Checar se sua cópia local tem o link do original
+git remote -v
+# 3. Se não, adicione o link do original
+git remote add upstream git@github.com:MarcosFerreira17/clean-architecture_templates.git
+# ou 
+git remote add upstream https://github.com/MarcosFerreira17/clean-architecture_templates.git
+# 4. Confirme se o link foi adicionado
+git remote -v
+# 5. Agora você pode fazer o fetch com o repo original, assumindo que o nome do link é 'upstream'
+git fetch upstream
+# 6. Fazer merge dos updates para sua branch main
+git merge upstream/main main 
+# 7. Realizar o push para seu fork com as novas mudanças 
+git push origin main
+```
+
+## Materiais complementares
+
+- [**Git4Noobs**](https://github.com/danielhe4rt/git4noobs)
+- [**Aprendendo sobre Git e Github**](https://www.youtube.com/watch?v=_LNWekPPS9w)
