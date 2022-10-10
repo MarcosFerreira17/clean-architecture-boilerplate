@@ -1,7 +1,7 @@
 <!-- Title -->
 
 <p align="center">
-  <h2 align="center">Clean Achitecture Templates</h2>
+  <h2 align="center">Clean Architecture Templates</h2>
   <img src="imgs/Banners-Dark.png" >
 </p>
     
@@ -17,7 +17,7 @@ The idea is based on taking project structures that we usually use and transform
 
 In the list below will be all the exercises that we will accept in our pull requests.
 
-- [1 - Clean Achitecture CQRS Entity Framework]()
+- [1 - Clean Architecture CQRS Entity Framework]()
 - [2 - Clean Architecture CQRS Dapper]()
 - [3 - Clean Architecture CQRS NHibernate]()
 - [4 - WebApi JWT Token Auth]()
@@ -29,18 +29,18 @@ If you want to give suggestions for challenges, contact a moderator.
 
 ## How to participate
 
-Contributions make the open source community an amazing place to learn, inspire and create. all contributions
+Contributions make the open-source community an amazing place to learn, inspire and create. all contributions
 are **extremely appreciated**
 
 However, as this will be an event, there will be some rules to follow in order for you to be approved and it is not complex. Understand:
 
-- In order for you to have an approved Pull Request (PR) linked to Hacktoberfest, you will have to do a PR of **challenge 1** (1 - Clean Achitecture CQRS Entity Framework);
+- In order for you to have an approved Pull Request (PR) linked to Hacktoberfest, you will have to do a PR of **challenge 1** (1 - Clean Architecture CQRS Entity Framework);
 
 
 When you create the branch to send the Pull Request, you should follow the example below:
 
 1. Fork the project
-2. Go to the fork repository on your github and in the code part copy the link to clone (HTTPS or SSH)
+2. Go to the fork repository option on your GitHub and in the code part copy the link to clone (HTTPS or SSH)
 3. Open the terminal, choose a folder of your choice and make a clone git clone paste the link you copied
 4. Create a folder of the language you chose in the `challenges/id_challenge/template_name/` directory
 5. Then, inside this lang folder, create the folder with your nickname, thus `challenges/id_challenge/name_template/nickname`
@@ -88,4 +88,4 @@ git push origin main
 ## Complementary materials
 
 - [**Git4Noobs**](https://github.com/danielhe4rt/git4noobs)
-- [**Learning about Git and Github**](https://www.youtube.com/watch?v=_LNWekPPS9w)
+- [**Learning about Git and GitHub**](https://www.youtube.com/watch?v=_LNWekPPS9w)
