@@ -2,9 +2,9 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Marcos Welington Ferreira",
     "classifications": ["Web", "ASP.NET", "cleancode", "Clean Architecture"],
-    "identity": "Custom.Template",
-    "name": "Custom template WebAPI",
-    "description": "This project aims to provide to final user a ddd webapi template using cleancode architecture, this project has no dependencies from core application.",
+    "identity": "CleanAchitecture.EF.Template",
+    "name": "CleanAchitecture EntityFramework Custom Template",
+    "description": "This project contains templates providing the minimum amount of code necessary for you to move forward, implementing clean architecture concepts",
     "shortName": "artemis",
     "defaultName": "Template",
     "tags": {

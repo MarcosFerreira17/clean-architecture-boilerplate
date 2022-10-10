@@ -15,20 +15,20 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddServices();
-// #if EnableSwaggerSupport
+#if EnableSwaggerSupport
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerConfiguration();
-// #endif
+#endif
 builder.Services.ConfigureCors();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    // #if EnableSwaggerSupport
+#if EnableSwaggerSupport
     app.UseSwaggerConfiguration();
-    // #endif
+#endif
 }
 
 app.UseHttpsRedirection();

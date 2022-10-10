@@ -103,6 +103,5 @@ public class TemplateService : ITemplateService
         if (entityFromDb is not null) return _mapper.Map<TemplateEntity>(entityFromDb);
         _logger.LogInformation("Id not found");
         throw new NotFoundException("This id does not exist in our database, please check and try again.");
-
     }
 }

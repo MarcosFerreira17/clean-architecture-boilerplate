@@ -7,7 +7,6 @@
     
  <!-- ABOUT THE PROJECT -->
 # About the project
-Welcome everyone to the second edition of He4rtoberfest, an event by He4rt Developers to encourage new developers to participate in Hacktoberfest by DigitalOcean and learn a little more about the idea of ​​open source.
 
 The idea is based on taking project structures that we usually use and transforming them into templates to speed up the development of new projects, from the simplest to the most complex, and doing them in the most varied architectures and packages, showing the greatest number of possible ways to solve the problem. same problem.
 
