@@ -1,4 +1,5 @@
-# dotnet-template
+# dotnet-template 
+###### under development
 
 <p align="center">
   <img src="images/logo.jpeg" alt="dotnet-template-onion logo" width="400"/>
@@ -52,7 +53,7 @@ dotnet new -l
 ```
 Templates                                          Short Name                 Language          Tags
 ----------------------------------------------------------------------------------------------------------
-.NET Core 6.0 Template with CQRS, ES and DDD       dotnet_template_onion      [C#]              Web/API/Microservices
+.NET Core 6.0 Template with CQRS, ES and DDD       dotnet_template      [C#]              Web/API/Microservices
 ```
 
 4. Create the .Net Core Solution
@@ -71,7 +72,7 @@ And you are ready to go, you can use Visual Studio, Visual Studio Code or any ot
 ```
 C:.
 │   .gitignore
-│   Dotnet.Onion.Template.sln
+│   Template.sln
 │   README.md
 │
 ├───docs
@@ -82,25 +83,22 @@ C:.
 │       SOLID.md
 │
 ├───images
-│       dotnet-onion-ddd-cqrs-es.jpg
+│       logo.jpeg
 │
 ├───src
-│   ├───Dotnet.Onion.Template.API
+│   ├───Template.Presentation
 │   │   │   .dockerignore
 │   │   │   Dockerfile
-│   │   │   Dotnet.Onion.Template.API.csproj
+│   │   │   Template.Presentation.csproj
 │   │   │   Program.cs
 │   │   │   Startup.cs
 │   │   │
 │   │   ├───Bindings
 │   │   ├───Config
-│   │   │       appsettings-dev.json
-│   │   │       appsettings-int.json
-│   │   │       appsettings-prod.json
-│   │   │       appsettings-stag.json
+│   │   │       appsettings.json
 │   │   │
 │   │   ├───Controllers
-│   │   │       TasksController.cs
+│   │   │       TemplateController.cs
 │   │   │
 │   │   ├───Extensions
 │   │   │   └───Middleware
@@ -110,69 +108,69 @@ C:.
 │   │   └───Properties
 │   │           launchSettings.json
 │   │
-│   ├───Dotnet.Onion.Template.Application
-│   │   │   Dotnet.Onion.Template.Application.csproj
+│   ├───Template.Application
+│   │   │   Template.Application.csproj
 │   │   │
 │   │   ├───Handlers
-│   │   │       TaskCommandHandler.cs
-│   │   │       TaskEventHandler.cs
+│   │   │       TemplateCommandHandler.cs
+│   │   │       TemplateEventHandler.cs
 │   │   │
 │   │   ├───Mappers
-│   │   │       TaskViewModelMapper.cs
+│   │   │       TemplateViewModelMapper.cs
 │   │   │
 │   │   ├───Services
-│   │   │       ITaskService.cs
-│   │   │       TaskService.cs
+│   │   │       ITemplateService.cs
+│   │   │       TemplateService.cs
 │   │   │
 │   │   └───ViewModels
-│   │           TaskViewModel.cs
+│   │           TemplateViewModel.cs
 │   │
-│   ├───Dotnet.Onion.Template.Domain
-│   │   │   Dotnet.Onion.Template.Domain.csproj
+│   ├───Template.Domain
+│   │   │   Template.Domain.csproj
 │   │   │   IAggregateRoot.cs
 │   │   │   IRepository.cs
 │   │   │
-│   │   └───Tasks
-│   │       │   ITaskFactory.cs
-│   │       │   ITaskRepository.cs
-│   │       │   Task.cs
+│   │   └───Templates
+│   │       │   ITemplateFactory.cs
+│   │       │   ITemplateRepository.cs
+│   │       │   Template.cs
 │   │       │
 │   │       ├───Commands
-│   │       │       CreateNewTaskCommand.cs
-│   │       │       DeleteTaskCommand.cs
-│   │       │       TaskCommand.cs
+│   │       │       CreateNewTemplateCommand.cs
+│   │       │       DeleteTemplateCommand.cs
+│   │       │       TemplateCommand.cs
 │   │       │
 │   │       ├───Events
-│   │       │       TaskCreatedEvent.cs
-│   │       │       TaskDeletedEvent.cs
-│   │       │       TaskEvent.cs
+│   │       │       TemplateCreatedEvent.cs
+│   │       │       TemplateDeletedEvent.cs
+│   │       │       TemplateEvent.cs
 │   │       │
 │   │       └───ValueObjects
 │   │               Description.cs
 │   │               Summary.cs
-│   │               TaskId.cs
+│   │               TemplateId.cs
 │   │
-│   └───Dotnet.Onion.Template.Infrastructure
-│       │   Dotnet.Onion.Template.Infrastructure.csproj
+│   └───Template.Infrastructure
+│       │   Template.Infrastructure.csproj
 │       │
 │       ├───Factories
 │       │       EntityFactory.cs
-│       │       TaskFactory.cs
+│       │       TemplateFactory.cs
 │       │
 │       └───Repositories
-│               TaskRepository.cs
+│               TemplateRepository.cs
 │
 └───tests
-    └───Dotnet.Onion.Template.Tests
-        │   Dotnet.Onion.Template.Tests.csproj
+    └───Template.Tests
+        │   Template.Tests.csproj
         │
         └───UnitTests
             ├───Application
             │   └───Services
-            │           TaskServiceTests.cs
+            │           TemplateServiceTests.cs
             │
             └───Helpers
                     HttpContextHelper.cs
-                    TaskHelper.cs
-                    TaskViewModelHelper.cs
+                    TemplateHelper.cs
+                    TemplateViewModelHelper.cs
 ```
