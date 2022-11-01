@@ -6,6 +6,8 @@ using Template.Presentation.Configurations;
 using Template.Presentation.Configurations.Extensions;
 using Template.Presentation.Middlewares;
 using Template.Infrastructure.DataContext;
+using Template.Infrastructure;
+using Template.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,22 +15,18 @@ var builder = WebApplication.CreateBuilder(args);
 SerilogConfiguration.AddSerilogApi();
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
-builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddServices();
-#if EnableSwaggerSupport
+builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddApplicationServices();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerConfiguration();
-#endif
 builder.Services.ConfigureCors();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-#if EnableSwaggerSupport
     app.UseSwaggerConfiguration();
-#endif
 }
 
 app.UseHttpsRedirection();
@@ -37,7 +35,7 @@ app.UseCors("CorsPolicy");
 
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
-app.MigrateDatabase<TemplateDbContext>();
+app.MigrateDatabase<ApplicationDbContext>();
 
 app.UseAuthentication();
 

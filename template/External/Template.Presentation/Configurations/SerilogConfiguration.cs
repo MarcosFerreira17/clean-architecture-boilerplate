@@ -9,7 +9,7 @@ public static class SerilogConfiguration
 {
     public static void AddSerilogApi()
     {
-        // Get the environment which the application is running on
+        // Get the environment which the Template.Application is running on
         var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
         // Get the configuration 

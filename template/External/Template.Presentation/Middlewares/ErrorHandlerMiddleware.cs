@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -26,8 +24,8 @@ public class ErrorHandlerMiddleware
         catch (Exception error)
         {
             var response = context.Response;
-            response.ContentType = "application/json";
-            var responseModel = ErrorResponse<string>.Fail(error.Message);
+            response.ContentType = "Template.Application/json";
+            var responseModel = new Response<string>(error.Message);
             response.StatusCode = error switch
             {
                 ValidationException => (int)HttpStatusCode.BadRequest,

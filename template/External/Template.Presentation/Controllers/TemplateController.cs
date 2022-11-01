@@ -1,11 +1,18 @@
+using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+using Template.Application.Exceptions.Model;
+using Template.Application.Features.Commands.CreateTemplate;
+using Template.Application.Features.Commands.DeleteTemplate;
+using Template.Application.Features.Commands.UpdateTemplate;
+using Template.Application.Features.Queries.GetTemplateById;
+using Template.Application.Features.Queries.GetTemplateList;
+using Template.Application.RequestFeatures;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Template.Application.RequestFeatures;
-using Template.Domain.Dtos;
-using Template.Application.Interfaces;
 
 namespace Template.Presentation.Controllers;
 
@@ -13,70 +20,60 @@ namespace Template.Presentation.Controllers;
 [Route("api/v1/[controller]")]
 public class TemplateController : ControllerBase
 {
-    private readonly ITemplateService _service;
+    private readonly IMediator _mediator;
 
-    public TemplateController(ITemplateService service)
+    public TemplateController(IMediator mediator)
     {
-        _service = service;
+        _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
 
-#nullable enable
-    [HttpGet]
-    [Produces("application/json")]
-    [ProducesResponseType(typeof(PagedList<TemplateDto>), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-    public async Task<IActionResult> GetAll([FromQuery] TemplateParameters? templateParameters)
+    [HttpGet(Name = "GetTemplate")]
+    [ProducesResponseType(typeof(IEnumerable<EntityDto>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IEnumerable<EntityDto>>> GetAll([FromQuery] GetTemplateParameters parameters)
     {
-        var entitiesFromDb = await _service.PagedGetAll(templateParameters);
+        var entities = await _mediator.Send(parameters);
         Response.Headers.Add("X-Pagination",
-            JsonConvert.SerializeObject(entitiesFromDb.MetaData));
-
-        return Ok(entitiesFromDb);
+            JsonConvert.SerializeObject(entities.MetaData));
+        return Ok(new Response<PagedList<EntityDto>>(entities));
     }
 
-    [HttpGet("{id}")]
-    [Produces("application/json")]
-    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
-    [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-    public async Task<IActionResult> GetById(long id)
+    [HttpGet("{id}", Name = "GetById")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesDefaultResponseType]
+    public async Task<ActionResult> GetById(long id)
     {
-        var entityFromDb = await _service.GetById(id);
-        return Ok(entityFromDb);
+        var entity = await _mediator.Send(id);
+
+        return Ok(entity);
     }
 
-    [HttpPost]
-    [Produces("application/json")]
-    [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(StatusCodeResult))]
-    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-    [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-    public async Task<IActionResult> Create([FromBody] TemplateDto addDto)
+    [HttpPost(Name = "CreateTemplate")]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    public async Task<ActionResult<long>> CreateTemplate([FromBody] CreateTemplateCommand command)
     {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
-        await _service.Create(addDto);
-        return Ok();
+        var result = await _mediator.Send(command);
+        return Ok(new Response<long>(result, $"Successfully created with Id: {result}"));
     }
 
-    [HttpPut("{id}")]
-    [Produces("application/json")]
+    [HttpPut(Name = "Update")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-    [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-    public async Task<IActionResult> UpdateAsync(long id, [FromBody] TemplateDto updateDto)
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesDefaultResponseType]
+    public async Task<ActionResult> Update([FromBody] UpdateTemplateCommand command)
     {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
-        await _service.Update(id, updateDto);
-        return Ok();
+        await _mediator.Send(command);
+        return NoContent();
     }
 
-    [HttpDelete("{id}")]
-    [Produces("application/json")]
+    [HttpDelete("{id}", Name = "Delete")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-    public async Task<IActionResult> RemoveAsync(long id)
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesDefaultResponseType]
+    public async Task<ActionResult> Delete(long id)
     {
-        await _service.Delete(id);
+        var command = new DeleteTemplateCommand() { Id = id };
+        await _mediator.Send(command);
         return NoContent();
     }
 }

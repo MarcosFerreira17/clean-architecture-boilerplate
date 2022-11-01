@@ -11,7 +11,7 @@ public static class ElasticSearchConfiguration
     {
         return new ElasticsearchSinkOptions(new Uri(configuration["ELKConfiguration:Uri"]))
         {
-            //Must be renamed == AutoRegisterTemplate, the project has a conflict with namespaces 
+            //Must be renamed == AutoRegisterT-emplate, the project has a conflict with namespaces, please rename without "-" 
             AutoRegisterTemplate = true,
             IndexFormat = $"{Assembly.GetExecutingAssembly().GetName().Name.ToLower()}-{env.ToLower().Replace(".", "-")}-{DateTime.UtcNow:yyyy-MM}"
         };

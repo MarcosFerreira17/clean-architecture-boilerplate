@@ -1,91 +1,178 @@
-<!-- Title -->
+# dotnet-template
 
 <p align="center">
-  <h2 align="center">Clean Architecture Templates</h2>
-  <img src="imgs/Banners-Dark.png" >
+  <img src="images/logo.jpeg" alt="dotnet-template-onion logo" width="400"/>
 </p>
-    
- <!-- ABOUT THE PROJECT -->
-# About the project
 
-The idea is based on taking project structures that we usually use and transforming them into templates to speed up the development of new projects, from the simplest to the most complex, and doing them in the most varied architectures and packages, showing the greatest number of possible ways to solve the problem. same problem.
+A .NET/.NET Core template to use Onion Architecture and DDD (Domain Driven Design) with CQRS and ES with a simple example on how to use all this architecture together from the Controller until the Repository class using Domain objects and different patterns.
 
-##
-<!-- ROADMAP OF PROJECT -->
+### Documentation
 
-## Examples to be developed
+You can find information about this template in:
 
-In the list below will be all the exercises that we will accept in our pull requests.
+- [Main Architecture](docs/ARCHITECTURE.md)
+- [Hexagonal Architecture](docs/HEXAGONAL.md)
+- [DDD](docs/DDD.md)
+- [CQRS AND ES](docs/CQRS-ES.md)
+- [SOLID](docs/SOLID.md)
 
-- [1 - Clean Architecture CQRS Entity Framework]()
-- [2 - Clean Architecture CQRS Dapper]()
-- [3 - Clean Architecture CQRS NHibernate]()
-- [4 - WebApi JWT Token Auth]()
-- [5 - Clean Architecture Identity4]()
+### Prerequisites
 
-If you want to give suggestions for challenges, contact a moderator.
-  
-<!-- CONTRIBUTING -->
+#### .NET 6
 
-## How to participate
+Ensure you have the correct dotnet-core SDK installed for your system:
 
-Contributions make the open-source community an amazing place to learn, inspire and create. all contributions
-are **extremely appreciated**
+https://dotnet.microsoft.com/download/dotnet/6.0
 
-However, as this will be an event, there will be some rules to follow in order for you to be approved and it is not complex. Understand:
+This is just the version used by the template, if you need to use a newer or older one, you can do it manually after.
 
-- In order for you to have an approved Pull Request (PR) linked to Hacktoberfest, you will have to do a PR of **challenge 1** (1 - Clean Architecture CQRS Entity Framework);
+### Usage
 
+1. Clone this repository
+2. To allow the api to be created you will need to install the template from nuget:
 
-When you create the branch to send the Pull Request, you should follow the example below:
-
-1. Fork the project
-2. Go to the fork repository option on your GitHub and in the code part copy the link to clone (HTTPS or SSH)
-3. Open the terminal, choose a folder of your choice and make a clone git clone paste the link you copied
-4. Create a folder of the language you chose in the `challenges/id_challenge/template_name/` directory
-5. Then, inside this lang folder, create the folder with your nickname, thus `challenges/id_challenge/name_template/nickname`
-6. Solve the challenge
-7. Copy the model.md to your folder, fill in the information described and rename the file to **README.MD**
-8. Create a branch with the challenge following the template beside `(git checkout -b challenges/id_challenge/template_name/nickname)`
-9. Then do `git add .`
-10. Commit `(git commit -m 'Finishing the challenge')`
-11. Push the Branch `(git push origin challenges/id_challenge/lang/nickname)`
-13. Open a Pull Request
-
-## Pull Requests Review
-
-As our goal will be to give the best experience possible to the participant, we will have some basic code review rules to make it an interesting experience for those who are applying the challenge, namely:
-
-- Reinforce code reading and typing when possible;
-- Typing/grammatical errors and variable names without a context, such as [a,b,c,x,y,z] will have to be changed;
-- Function isolation when necessary can also be requested.
-
-Any questions, you can go to our [question bank](https://github.com/MarcosFerreira17/clean-architecture_templates/issues) and ask.
-
-## Updating your fork
-
-If this repository is updated with new exercises you need to update your fork
-
-```bash
-#1. Switch to the main branch
-git checkout main
-# 2. Check if your local copy has a link to the original
-git remote -v
-#3. If not, add the original link
-git remote add upstream git@github.com:MarcosFerreira17/clean-architecture_templates.git
-# or
-git remote add upstream https://github.com/MarcosFerreira17/clean-architecture_templates.git
-#4. Confirm the link has been added
-git remote -v
-#5. You can now fetch the original repo, assuming the link name is 'upstream'
-git fetch upstream
-# 6. Merge updates to your main branch
-git merge upstream/main main
-#7. Push your fork with the new changes
-git push origin main
+```
+dotnet new -i {{Path_where_you_cloned_the_repository}}
 ```
 
-## Complementary materials
+- Example:
 
-- [**Git4Noobs**](https://github.com/danielhe4rt/git4noobs)
-- [**Learning about Git and GitHub**](https://www.youtube.com/watch?v=_LNWekPPS9w)
+```
+dotnet new -i C:\GitLocal\dotnet-template-onion
+```
+
+3. To check that the template has been installed successfully:
+
+```
+dotnet new -l
+```
+
+- There should now be a new template **dotnet_template_onion**
+
+```
+Templates                                          Short Name                 Language          Tags
+----------------------------------------------------------------------------------------------------------
+.NET Core 6.0 Template with CQRS, ES and DDD       dotnet_template_onion      [C#]              Web/API/Microservices
+```
+
+4. Create the .Net Core Solution
+
+```
+dotnet new dotnet_template_onion -n {{Namespace_of_your_project}} -o <outputFolder>
+```
+
+- This will create the folder containing a solution and project folder.
+  ![](images/installation.jpg)
+
+And you are ready to go, you can use Visual Studio, Visual Studio Code or any other IDE to proceed with your coding.
+
+### Structure of the template
+
+```
+C:.
+│   .gitignore
+│   Dotnet.Onion.Template.sln
+│   README.md
+│
+├───docs
+│       ARCHITECTURE.md
+│       CQRS-ES.md
+│       DDD.md
+│       HEXAGONAL.md
+│       SOLID.md
+│
+├───images
+│       dotnet-onion-ddd-cqrs-es.jpg
+│
+├───src
+│   ├───Dotnet.Onion.Template.API
+│   │   │   .dockerignore
+│   │   │   Dockerfile
+│   │   │   Dotnet.Onion.Template.API.csproj
+│   │   │   Program.cs
+│   │   │   Startup.cs
+│   │   │
+│   │   ├───Bindings
+│   │   ├───Config
+│   │   │       appsettings-dev.json
+│   │   │       appsettings-int.json
+│   │   │       appsettings-prod.json
+│   │   │       appsettings-stag.json
+│   │   │
+│   │   ├───Controllers
+│   │   │       TasksController.cs
+│   │   │
+│   │   ├───Extensions
+│   │   │   └───Middleware
+│   │   │           ErrorDetails.cs
+│   │   │           ExceptionMiddleware.cs
+│   │   │
+│   │   └───Properties
+│   │           launchSettings.json
+│   │
+│   ├───Dotnet.Onion.Template.Application
+│   │   │   Dotnet.Onion.Template.Application.csproj
+│   │   │
+│   │   ├───Handlers
+│   │   │       TaskCommandHandler.cs
+│   │   │       TaskEventHandler.cs
+│   │   │
+│   │   ├───Mappers
+│   │   │       TaskViewModelMapper.cs
+│   │   │
+│   │   ├───Services
+│   │   │       ITaskService.cs
+│   │   │       TaskService.cs
+│   │   │
+│   │   └───ViewModels
+│   │           TaskViewModel.cs
+│   │
+│   ├───Dotnet.Onion.Template.Domain
+│   │   │   Dotnet.Onion.Template.Domain.csproj
+│   │   │   IAggregateRoot.cs
+│   │   │   IRepository.cs
+│   │   │
+│   │   └───Tasks
+│   │       │   ITaskFactory.cs
+│   │       │   ITaskRepository.cs
+│   │       │   Task.cs
+│   │       │
+│   │       ├───Commands
+│   │       │       CreateNewTaskCommand.cs
+│   │       │       DeleteTaskCommand.cs
+│   │       │       TaskCommand.cs
+│   │       │
+│   │       ├───Events
+│   │       │       TaskCreatedEvent.cs
+│   │       │       TaskDeletedEvent.cs
+│   │       │       TaskEvent.cs
+│   │       │
+│   │       └───ValueObjects
+│   │               Description.cs
+│   │               Summary.cs
+│   │               TaskId.cs
+│   │
+│   └───Dotnet.Onion.Template.Infrastructure
+│       │   Dotnet.Onion.Template.Infrastructure.csproj
+│       │
+│       ├───Factories
+│       │       EntityFactory.cs
+│       │       TaskFactory.cs
+│       │
+│       └───Repositories
+│               TaskRepository.cs
+│
+└───tests
+    └───Dotnet.Onion.Template.Tests
+        │   Dotnet.Onion.Template.Tests.csproj
+        │
+        └───UnitTests
+            ├───Application
+            │   └───Services
+            │           TaskServiceTests.cs
+            │
+            └───Helpers
+                    HttpContextHelper.cs
+                    TaskHelper.cs
+                    TaskViewModelHelper.cs
+```

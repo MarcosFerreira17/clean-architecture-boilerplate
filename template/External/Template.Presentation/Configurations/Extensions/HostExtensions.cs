@@ -11,7 +11,7 @@ namespace Template.Presentation.Configurations.Extensions;
 
 public static class HostExtensions
 {
-    public static IHost MigrateDatabase<TContext>(this IHost host) where TContext : TemplateDbContext
+    public static IHost MigrateDatabase<TContext>(this IHost host) where TContext : ApplicationDbContext
     {
         using (var scope = host.Services.CreateScope())
         {
@@ -36,11 +36,11 @@ public static class HostExtensions
             catch (Exception ex)
             {
                 logger.LogError(ex, "An error occurred while migrating the database used on context {DbContextName}", typeof(TContext).Name);
-                throw new GenericException(ex.Message + "An error occurred while migrating the database used on context {DbContextName}", typeof(TContext).Name);
+                throw new Exception(ex.Message + "An error occurred while migrating the database");
             }
         }
         return host;
     }
     private static void InvokeSeeder<TContext>(TContext context)
-        where TContext : TemplateDbContext => context.Database.Migrate();
+        where TContext : ApplicationDbContext => context.Database.Migrate();
 }

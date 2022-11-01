@@ -1,11 +1,11 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "Marcos Welington Ferreira",
+    "author": "Engineering team",
     "classifications": ["Web", "ASP.NET", "cleancode", "Clean Architecture"],
-    "identity": "CleanAchitecture.EF.Template",
-    "name": "CleanAchitecture EntityFramework Custom Template",
-    "description": "This project contains templates providing the minimum amount of code necessary for you to move forward, implementing clean architecture concepts",
-    "shortName": "artemis",
+    "identity": "GFT.Custom.Template",
+    "name": "GFT Custom template WebAPI",
+    "description": "This project aims to provide to final user a ddd webapi template using cleancode architecture, this project has no dependencies from core Template.Application.",
+    "shortName": "gft.cqrs",
     "defaultName": "Template",
     "tags": {
         "language": "C#",
@@ -20,9 +20,15 @@
             "datatype": "bool",
             "defaultValue": "true"
         },
-        "DockerSupport": {
+        "Dockerfile": {
             "type": "parameter",
-            "description": "Add dockerfile and dockercompose configuration.",
+            "description": "Add dockerfile.",
+            "datatype": "bool",
+            "defaultValue": "true"
+        },
+        "DockerCompose": {
+            "type": "parameter",
+            "description": "Add dockercompose configuration.",
             "datatype": "bool",
             "defaultValue": "true"
         },
@@ -45,13 +51,16 @@
                 {
                     "condition": "(!EnableSwaggerSupport)",
                     "exclude": [
-                        "Individual/Template.Host/Extensions/SwaggerConfiguration.cs"
+                        "Template/Template.Host/Extensions/SwaggerConfiguration.cs"
                     ]
                 },
                 {
-                    "condition": "(!DockerSupport)",
+                    "condition": "(!Dockerfile)",
+                    "exclude": ["Template/Template.Host/Dockerfile"]
+                },
+                {
+                    "condition": "(!DockerCompose)",
                     "exclude": [
-                        "Individual/Template.Host/Dockerfile",
                         "/docker-compose.dcproj",
                         "/docker-compose.override.yml",
                         "/docker-compose.yml"
@@ -59,11 +68,11 @@
                 },
                 {
                     "condition": "(!IncludeSolutionFile)",
-                    "exclude": ["Individual/Template.sln"]
+                    "exclude": ["Template/Template.sln"]
                 },
                 {
                     "condition": "(!IncludeTestsXUnit)",
-                    "exclude": ["Individual/Template.Tests/**/*"]
+                    "exclude": ["Template/Template.Tests/**/*"]
                 }
             ],
             "source": "./",
