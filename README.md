@@ -2,7 +2,7 @@
 ###### In development, not recommended for use
 
 <p align="center">
-  <img src="images/logo.jpeg" alt="dotnet-template-onion logo" width="400"/>
+  <img src="images/clean_architecture.png" alt="dotnet-template-clean_architecture logo" width="700"/>
 </p>
 
 A .NET/.NET Core template to use Clean Architecture and DDD (Domain Driven Design).
@@ -71,22 +71,15 @@ C:.
 ├───src
 │   │
 │   ├───Template.Application
-│   │   │   Template.Application.csproj
-│   │   │
-
+│   │   │   
+│   │   Template.Application.csproj
+│   │   
 │   │
 │   ├───Template.Domain
-│   │   │   Template.Domain.csproj
-
-
-
-
-│   │   │
+│   │   │   
+│   │   Template.Domain.csproj
+│   │   
 │   ├───Template.Presentation
-
-
-
-
 │   │ 
 │   └───Template.Infrastructure
 │       │   DependencyInjection.cs
