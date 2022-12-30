@@ -6,13 +6,11 @@ using Template.Application.Exceptions.Model;
 using Template.Application.Features.Commands.CreateTemplate;
 using Template.Application.Features.Commands.DeleteTemplate;
 using Template.Application.Features.Commands.UpdateTemplate;
-using Template.Application.Features.Queries.GetTemplateById;
-using Template.Application.Features.Queries.GetTemplateList;
-using Template.Application.RequestFeatures;
+using Template.Application.Features.Queries.GetEntities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Template.Application.Features.Queries.GetEntityById;
 
 namespace Template.Presentation.Controllers;
 
@@ -28,13 +26,12 @@ public class TemplateController : ControllerBase
     }
 
     [HttpGet(Name = "GetTemplate")]
-    [ProducesResponseType(typeof(IEnumerable<EntityDto>), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<IEnumerable<EntityDto>>> GetAll([FromQuery] GetTemplateParameters parameters)
+    [ProducesResponseType(typeof(IEnumerable<GetEntitiesViewModel>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IEnumerable<GetEntitiesViewModel>>> GetAll()
     {
-        var entities = await _mediator.Send(parameters);
-        Response.Headers.Add("X-Pagination",
-            JsonConvert.SerializeObject(entities.MetaData));
-        return Ok(new Response<PagedList<EntityDto>>(entities));
+        var getEntities = new GetEntitiesQuery();
+        var entities = await _mediator.Send(getEntities);
+        return Ok(entities);
     }
 
     [HttpGet("{id}", Name = "GetById")]
@@ -43,7 +40,8 @@ public class TemplateController : ControllerBase
     [ProducesDefaultResponseType]
     public async Task<ActionResult> GetById(long id)
     {
-        var entity = await _mediator.Send(id);
+        var getEntity = new GetEntityByIdQuery(id);
+        var entity = await _mediator.Send(getEntity);
 
         return Ok(entity);
     }

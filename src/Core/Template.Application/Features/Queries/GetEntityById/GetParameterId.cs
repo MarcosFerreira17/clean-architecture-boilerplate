@@ -1,4 +1,4 @@
-namespace Template.Application.Features.Queries.GetTemplateById;
+namespace Template.Application.Features.Queries.GetEntityById;
 
 public class GetParameterId
 {
