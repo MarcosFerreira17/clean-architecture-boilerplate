@@ -1,0 +1,12 @@
+£
+ôc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Common\AuditableEntityBase.csutf-8ö
+êc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Common\EntityBase.csutf-8õ
+ëc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Common\ValueObject.csutf-8ò
+éc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Dtos\AddressDto.csutf-8õ
+ëc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Dtos\ListPersonDto.csutf-8ó
+çc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Dtos\PersonDto.csutf-8ò
+éc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\Entities\Person.csutf-8ù
+ìc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\ValueObjects\Address.csutf-8∫
+Æc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\obj\Debug\net6.0\Costumer.Domain.GlobalUsings.g.csutf-8«
+ªc:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8∏
+¨c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Domain\obj\Debug\net6.0\Costumer.Domain.AssemblyInfo.csutf-8

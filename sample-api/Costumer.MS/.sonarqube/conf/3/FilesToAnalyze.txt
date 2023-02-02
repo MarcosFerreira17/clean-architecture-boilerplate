@@ -1,0 +1,15 @@
+﻿c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Configurations\DependencyInjection.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Configurations\ElasticSearchConfiguration.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Configurations\Extensions\HostExtensions.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Configurations\SerilogConfiguration.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Configurations\SwaggerConfiguration.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Controllers\CostumerController.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Middlewares\ErrorHandlerMiddleware.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Program.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\obj\Debug\net6.0\Costumer.Host.AssemblyInfo.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\obj\Debug\net6.0\Costumer.Host.MvcApplicationPartsAssemblyInfo.cs
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\appsettings.Development.json
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\appsettings.json
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Dockerfile
+c:\dev\gft_projects\atena_dotnet\dotnet-sample\sample-component-v2\src\Projects\Core\Gft.Sample\Costumer.MS\Costumer.Host\Properties\launchSettings.json
