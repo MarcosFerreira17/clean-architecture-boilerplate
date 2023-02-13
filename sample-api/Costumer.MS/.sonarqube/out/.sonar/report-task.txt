@@ -1,6 +1,0 @@
-projectKey=atena_dotnet
-serverUrl=http://localhost:9000
-serverVersion=9.6.1.59531
-dashboardUrl=http://localhost:9000/dashboard?id=atena_dotnet
-ceTaskId=AYMywWe14sLSVp6Tguj4
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYMywWe14sLSVp6Tguj4
