@@ -1,5 +1,5 @@
 # .NET Template 
-###### In development, not recommended for use
+###### In development...
 
 <p align="center">
   <img src="images/clean_architecture.png" alt="dotnet-template-clean_architecture logo" width="700"/>
@@ -35,7 +35,7 @@ dotnet new -i {{Path_where_you_cloned_the_repository}}
 - Example:
 
 ```
-dotnet new -i C:\mylocalpaste\dotnet-template
+dotnet new -i "C:\your-paste\dotnet-template\template"
 ```
 
 3. To check that the template has been installed successfully:
@@ -49,7 +49,7 @@ dotnet new -l
 ```
 Templates                                          Short Name                 Language          Tags
 ----------------------------------------------------------------------------------------------------------
-.NET Core 6.0 Template with CQRS and DDD       dotnet_template      [C#]              Web/API/Microservices
+.NET Core 6.0 Template with CQRS and DDD       webapi-tiers      [C#]              Web/API/Microservices
 ```
 
 4. Create the .Net Core Solution
@@ -68,17 +68,21 @@ And you are ready to go, you can use Visual Studio, Visual Studio Code or any ot
 ```
 C:.
 │
-├───src
+├───Core
 │   │
 │   ├───Template.Application
 │   │   │   
-│   │   Template.Application.csproj
+│   │   └Template.Application.csproj
 │   │   
 │   │
-│   ├───Template.Domain
-│   │   │   
-│   │   Template.Domain.csproj
-│   │   
+│   └───Template.Domain
+│       │   
+│       └Template.Domain.csproj
+│   
+│  
+│        
+├───External
+│   │
 │   ├───Template.Presentation
 │   │ 
 │   └───Template.Infrastructure
@@ -97,11 +101,9 @@ C:.
 │               TemplateRepository.cs
 │
 └───Tests
-    └───Achitecture.Tests
-        │   Achitecture.Tests.csproj
+    └───Architecture.Tests
+        │   └───Architecture.Tests.csproj
         │
         └───Unit.Tests
-              Unit.Application
-                  Services
-            
+              └───Unit.Tests.csproj
 ```
