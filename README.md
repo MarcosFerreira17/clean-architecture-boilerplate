@@ -9,17 +9,18 @@ A .NET/.NET Core template to use Clean Architecture and DDD (Domain Driven Desig
 
 ### Documentation
 
-<!-- You can find information about this template in:
+You can find information about this template in:
 
-- [Main Architecture](docs/ARCHITECTURE.md)
-- [Hexagonal Architecture](docs/HEXAGONAL.md)
-- [DDD](docs/DDD.md)
-- [CQRS AND ES](docs/CQRS-ES.md)
-- [SOLID](docs/SOLID.md) -->
+- [Main Architecture](docs/ARCHITECTURE.md)  -> Under construction.
+- [Hexagonal Architecture](docs/HEXAGONAL.md)  -> Under construction.
+- [DDD](docs/DDD.md)  -> Under construction.
+- [CQRS AND ES](docs/CQRS-ES.md) -> Under construction.
+- [SOLID](docs/SOLID.md) 
 
 ### Prerequisites
 
 #### [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+#### [Docker]()
 
 This is just the version used by the template, if you need to use a newer or older one, you can do it manually after.
 
