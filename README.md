@@ -11,10 +11,10 @@ A .NET/.NET Core template to use Clean Architecture and DDD (Domain Driven Desig
 
 You can find information about this template in:
 
-- [Main Architecture](docs/ARCHITECTURE.md)  -> Under construction.
-- [Hexagonal Architecture](docs/HEXAGONAL.md)  -> Under construction.
-- [DDD](docs/DDD.md)  -> Under construction.
-- [CQRS AND ES](docs/CQRS-ES.md) -> Under construction.
+- [Main Architecture](docs/ARCHITECTURE.md) 
+- [Hexagonal Architecture](docs/HEXAGONAL.md)  
+- [DDD](docs/DDD.md)  
+- [CQRS AND ES](docs/CQRS-ES.md) 
 - [SOLID](docs/SOLID.md) 
 
 ### Prerequisites
