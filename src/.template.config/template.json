@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json.schemastore.org/Boilerplate",
+    "$schema": "http://json.schemastore.org/template",
     "author": "Marcos Welington Ferreira",
     "classifications": [
         "Web",
@@ -51,7 +51,7 @@
                 {
                     "condition": "(!EnableSwaggerSupport)",
                     "exclude": [
-                        "/External/Boilerplate.API/Configurations/SwaggerConfiguration.cs"
+                        "./Boilerplate.API/Configurations/SwaggerConfiguration.cs"
                     ]
                 },
                 {
