@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: mysql:8.0.22
+
+  boilerplate_api:
+    image: ${DOCKER_REGISTRY-}boilerplateapi
+    build:
+      context: .
+      dockerfile: Boilerplate.API/Dockerfile
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.16.1
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.16.1
+
+  sonarqube:
+    image: sonarqube:latest
+
+volumes:
+  boilerplatedb:
+  elasticsearch-data:
+networks:
+  boilerplate-network:
+    driver: bridge
+  elasticnetwork:
+    driver: bridge
+

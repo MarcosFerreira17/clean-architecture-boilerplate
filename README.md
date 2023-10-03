@@ -1,33 +1,35 @@
-# .NET Template 
+# .NET Boilerplate
+
 ###### In development...
 
 <p align="center">
-  <img src="images/clean_architecture.png" alt="dotnet-template-clean_architecture logo" width="700"/>
+  <img src="images/clean_architecture.png" alt="dotnet-Boilerplate-clean_architecture logo" width="700"/>
 </p>
 
-A .NET/.NET Core template to use Clean Architecture and DDD (Domain Driven Design).
+A .NET/.NET Core Boilerplate to use Clean Architecture and DDD (Domain Driven Design).
 
 ### Documentation
 
-You can find information about this template in:
+You can find information about this Boilerplate in:
 
-- [Main Architecture](docs/ARCHITECTURE.md) 
-- [Hexagonal Architecture](docs/HEXAGONAL.md)  
-- [DDD](docs/DDD.md)  
-- [CQRS AND ES](docs/CQRS-ES.md) 
-- [SOLID](docs/SOLID.md) 
+- [Main Architecture](docs/ARCHITECTURE.md)
+- [Hexagonal Architecture](docs/HEXAGONAL.md)
+- [DDD](docs/DDD.md)
+- [CQRS AND ES](docs/CQRS-ES.md)
+- [SOLID](docs/SOLID.md)
 
 ### Prerequisites
 
 #### [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+
 #### [Docker]()
 
-This is just the version used by the template, if you need to use a newer or older one, you can do it manually after.
+This is just the version used by the Boilerplate, if you need to use a newer or older one, you can do it manually after.
 
 ### Usage
 
 1. Clone this repository
-2. To allow the api to be created you will need to install the template from nuget:
+2. To allow the api to be created you will need to install the Boilerplate from nuget:
 
 ```
 dotnet new -i {{Path_where_you_cloned_the_repository}}
@@ -36,27 +38,27 @@ dotnet new -i {{Path_where_you_cloned_the_repository}}
 - Example:
 
 ```
-dotnet new -i "C:\your-paste\dotnet-template\template"
+dotnet new -i "C:\your-paste\dotnet-Boilerplate\Boilerplate"
 ```
 
-3. To check that the template has been installed successfully:
+3. To check that the Boilerplate has been installed successfully:
 
 ```
 dotnet new -l
 ```
 
-- There should now be a new template **dotnet_template_onion**
+- There should now be a new Boilerplate **dotnet_Boilerplate_onion**
 
 ```
-Templates                                          Short Name                 Language          Tags
+Boilerplates                                          Short Name                 Language          Tags
 ----------------------------------------------------------------------------------------------------------
-.NET Core 6.0 Template with CQRS and DDD       webapi-tiers      [C#]              Web/API/Microservices
+.NET Core 6.0 Boilerplate with CQRS and DDD       webapi-tiers      [C#]              Web/API/Microservices
 ```
 
 4. Create the .Net Core Solution
 
 ```
-dotnet new dotnet_template -n {{Namespace_of_your_project}} -o <outputFolder>
+dotnet new dotnet_Boilerplate -n {{Namespace_of_your_project}} -o <outputFolder>
 ```
 
 - This will create the folder containing a solution and project folder.
@@ -64,42 +66,42 @@ dotnet new dotnet_template -n {{Namespace_of_your_project}} -o <outputFolder>
 
 And you are ready to go, you can use Visual Studio, Visual Studio Code or any other IDE to proceed with your coding.
 
-### Structure of the template
+### Structure of the Boilerplate
 
 ```
 C:.
 │
 ├───Core
 │   │
-│   ├───Template.Application
-│   │   │   
-│   │   └Template.Application.csproj
-│   │   
+│   ├───Boilerplate.Application
+│   │   │
+│   │   └Boilerplate.Application.csproj
 │   │
-│   └───Template.Domain
-│       │   
-│       └Template.Domain.csproj
-│   
-│  
-│        
+│   │
+│   └───Boilerplate.Domain
+│       │
+│       └Boilerplate.Domain.csproj
+│
+│
+│
 ├───External
 │   │
-│   ├───Template.Presentation
-│   │ 
-│   └───Template.Infrastructure
+│   ├───Boilerplate.API
+│   │
+│   └───Boilerplate.Infrastructure
 │       │   DependencyInjection.cs
-│       │   Template.Infrastructure.csproj
+│       │   Boilerplate.Infrastructure.csproj
 │       │
 │       ├───DataContext
 │       │       ApplicationDbContext.cs
 │       │
-│       ├───Migrations 
+│       ├───Migrations
 │       │
 │       ├───Common
 │       │       BaseRepository.cs
 │       │
 │       └───Repositories
-│               TemplateRepository.cs
+│               BoilerplateRepository.cs
 │
 └───Tests
     └───Architecture.Tests
