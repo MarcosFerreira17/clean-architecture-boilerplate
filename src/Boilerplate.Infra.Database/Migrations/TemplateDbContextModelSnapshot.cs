@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Boilerplate.Infrastructure.DataContext;
+using Boilerplate.Infra.Database.DataContext;
 
 #nullable disable
 
-namespace Boilerplate.Infrastructure.Migrations
+namespace Boilerplate.Infra.Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

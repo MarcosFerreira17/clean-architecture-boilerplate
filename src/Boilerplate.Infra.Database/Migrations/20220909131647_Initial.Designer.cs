@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Boilerplate.Infrastructure.DataContext;
+using Boilerplate.Infra.Database.DataContext;
 
 #nullable disable
 
-namespace Boilerplate.Infrastructure.Migrations
+namespace Boilerplate.Infra.Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20220909131647_Initial")]

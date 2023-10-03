@@ -1,10 +1,10 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Boilerplate.Domain.Common;
-using Boilerplate.Infrastructure.DataContext;
-using Boilerplate.Infrastructure.Repositories.Interfaces;
+using Boilerplate.Infra.Database.DataContext;
+using Boilerplate.Infra.Database.Repositories.Interfaces;
 
-namespace Boilerplate.Infrastructure.Repositories;
+namespace Boilerplate.Infra.Database.Repositories;
 
 public abstract class BaseRepository<T, TContext> : IBaseRepository<T> where T : EntityBase<long> where TContext : ApplicationDbContext
 {

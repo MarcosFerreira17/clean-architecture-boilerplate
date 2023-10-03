@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boilerplate.API", "Boilerplate.API\Boilerplate.API.csproj", "{10297C98-0540-4CBA-A518-A4D57FA20CBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boilerplate.Infrastructure", "Boilerplate.Infrastructure\Boilerplate.Infrastructure.csproj", "{3D722FC4-3246-4D7B-B1DB-F2781EB713C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boilerplate.Infra.Database", "Boilerplate.Infra.Database\Boilerplate.Infra.Database.csproj", "{3D722FC4-3246-4D7B-B1DB-F2781EB713C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boilerplate.Domain", "Boilerplate.Domain\Boilerplate.Domain.csproj", "{6E570C73-C360-4494-B524-1A3457B887B4}"
 EndProject

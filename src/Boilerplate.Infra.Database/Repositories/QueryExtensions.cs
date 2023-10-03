@@ -1,6 +1,6 @@
 using Boilerplate.Domain.Entities;
 
-namespace Boilerplate.Infrastructure.Repositories;
+namespace Boilerplate.Infra.Database.Repositories;
 
 public static class QueryExtensions
 {

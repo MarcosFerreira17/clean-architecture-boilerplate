@@ -6,8 +6,8 @@ using Boilerplate.Application.Services.Interfaces;
 using Boilerplate.Application.RequestFeatures;
 using Boilerplate.Domain.Dtos;
 using Boilerplate.Domain.Entities;
-using Boilerplate.Infrastructure.Repositories.Interfaces;
-using Boilerplate.Infrastructure.Repositories;
+using Boilerplate.Infra.Database.Repositories.Interfaces;
+using Boilerplate.Infra.Database.Repositories;
 
 namespace Boilerplate.Application.Services;
 

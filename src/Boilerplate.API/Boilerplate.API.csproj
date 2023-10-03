@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
+        <Nullable>disable</Nullable>
         <UserSecretsId>d566f4ab-0545-4b78-b11d-6dd4f3c9a8bc</UserSecretsId>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
@@ -30,7 +31,7 @@
 
     <ItemGroup Label="References">
         <ProjectReference Include="..\Boilerplate.Application\Boilerplate.Application.csproj"/>
-        <ProjectReference Include="..\Boilerplate.Infrastructure\Boilerplate.Infrastructure.csproj"/>
+        <ProjectReference Include="..\Boilerplate.Infra.Database\Boilerplate.Infra.Database.csproj"/>
     </ItemGroup>
 
 </Project>

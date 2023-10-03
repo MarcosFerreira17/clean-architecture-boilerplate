@@ -2,7 +2,7 @@ using AutoMapper;
 using Boilerplate.Domain.Dtos;
 using Boilerplate.Domain.Entities;
 
-namespace Boilerplate.Infrastructure.Automapper;
+namespace Boilerplate.Infra.Database.Automapper;
 
 public class BoilerplateProfile : Profile
 {

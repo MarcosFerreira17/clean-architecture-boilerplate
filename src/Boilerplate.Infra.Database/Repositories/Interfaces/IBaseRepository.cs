@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace Boilerplate.Infrastructure.Repositories.Interfaces;
+namespace Boilerplate.Infra.Database.Repositories.Interfaces;
 
 public interface IBaseRepository<T>
 {

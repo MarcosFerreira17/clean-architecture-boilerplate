@@ -4,10 +4,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Boilerplate.Application.Services;
 using Boilerplate.Application.Services.Interfaces;
-using Boilerplate.Infrastructure.DataContext;
-using Boilerplate.Infrastructure.Repositories;
+using Boilerplate.Infra.Database.DataContext;
+using Boilerplate.Infra.Database.Repositories;
 using FluentValidation.AspNetCore;
-using Boilerplate.Infrastructure.Repositories.Interfaces;
+using Boilerplate.Infra.Database.Repositories.Interfaces;
 
 namespace Boilerplate.API.Configurations;
 

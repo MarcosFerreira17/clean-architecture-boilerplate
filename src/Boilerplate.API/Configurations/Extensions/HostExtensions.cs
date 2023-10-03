@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Polly;
 using Boilerplate.Application.Exceptions;
-using Boilerplate.Infrastructure.DataContext;
+using Boilerplate.Infra.Database.DataContext;
 
 namespace Boilerplate.API.Configurations.Extensions;
 

@@ -1,8 +1,8 @@
 using Boilerplate.Domain.Entities;
-using Boilerplate.Infrastructure.DataContext;
-using Boilerplate.Infrastructure.Repositories.Interfaces;
+using Boilerplate.Infra.Database.DataContext;
+using Boilerplate.Infra.Database.Repositories.Interfaces;
 
-namespace Boilerplate.Infrastructure.Repositories;
+namespace Boilerplate.Infra.Database.Repositories;
 
 public class BoilerplateRepository : BaseRepository<BoilerplateEntity, ApplicationDbContext>, IBoilerplateRepository
 {

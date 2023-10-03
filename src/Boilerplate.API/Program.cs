@@ -1,33 +1,35 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Serilog;
 using Boilerplate.API.Configurations;
 using Boilerplate.API.Configurations.Extensions;
 using Boilerplate.API.Middlewares;
-using Boilerplate.Infrastructure.DataContext;
+using Boilerplate.Infra.Database.DataContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 SerilogConfiguration.AddSerilogApi();
+
 builder.Host.UseSerilog();
+
 builder.Services.AddControllers();
+
 builder.Services.AddInfrastructure(builder.Configuration);
+
 builder.Services.AddServices();
-#if EnableSwaggerSupport
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerConfiguration();
-#endif
+
 builder.Services.ConfigureCors();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-#if EnableSwaggerSupport
-    app.UseSwaggerConfiguration();
-#endif
 
+app.UseSwaggerConfiguration();
 
 app.UseHttpsRedirection();
 

@@ -10,7 +10,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Boilerplate.API/Boilerplate.API.csproj", "Boilerplate.API/"]
 COPY ["Boilerplate.Application/Boilerplate.Application.csproj", "Boilerplate.Application/"]
-COPY ["Boilerplate.Infrastructure/Boilerplate.Infrastructure.csproj", "Boilerplate.Infrastructure/"]
+COPY ["Boilerplate.Infra.Database/Boilerplate.Infra.Database.csproj", "Boilerplate.Infra.Database/"]
 COPY ["Boilerplate.Domain/Boilerplate.Domain.csproj", "Boilerplate.Domain/"]
 RUN dotnet restore "Boilerplate.API/Boilerplate.API.csproj"
 COPY . .

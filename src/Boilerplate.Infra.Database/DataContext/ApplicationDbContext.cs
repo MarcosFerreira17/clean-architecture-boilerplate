@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Boilerplate.Domain.Entities;
 
-namespace Boilerplate.Infrastructure.DataContext;
+namespace Boilerplate.Infra.Database.DataContext;
 
 public class ApplicationDbContext : DbContext
 {
