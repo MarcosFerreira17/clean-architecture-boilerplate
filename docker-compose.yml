@@ -1,0 +1,6 @@
+services:
+  boilerplate.webapi:
+    image: ${DOCKER_REGISTRY-}boilerplatewebapi
+    build:
+      context: .
+      dockerfile: src/Host/Boilerplate.WebApi/Dockerfile
